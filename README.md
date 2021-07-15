@@ -1,5 +1,5 @@
 # FileScan
-This is an NodeJS version 12.16.1 application to scan the file contents and output to console and a file assigned (Default will is output.txt)
+This is an NodeJS version 12.16.1 application to scan the file contents and output to console and a file in output folder (Default is output.txt)
  
 ## How to run
 node src/index.js Path Keyword OutputFile Case-sensitive 
