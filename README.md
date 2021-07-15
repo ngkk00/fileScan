@@ -15,13 +15,34 @@ Parameter
 cd fileScan
 #Case Sensitive with default file [output.txt]
 node .\src\index.js path TODO
+```
+<p align="center">
+    <img src ='./resources/gif/normalSearch.gif'
+</p>
+<br>
 
+```bash 
 #Case Sensitive with output file name
 node .\src\index.js path TODO ./searchfile.txt  
+```
 
+```bash 
 #Case insensitive
 node .\src\index.js path todo ./output.txt i  
 ```
+<p align="center">
+    <img src ='./resources/gif/insensitiveSearch.gif'
+</p>
+<br>
+
+```bash 
+#Change output file name
+node .\src\index.js path TODO searchResult  
+```
+<p align="center">
+    <img src ='./resources/gif/changeOutputFile.gif'
+</p>
+<br>
 
 ## Output
 The output will display in the terminal and the output will also be saved to a txt file (Default is output.txt) in the output directory level
