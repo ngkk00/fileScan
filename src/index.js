@@ -4,7 +4,7 @@ const args = process.argv.slice(2);
 
 //At least 2 arguments
 if(args.length <= 1) {
-    console.log("Please input the Path, Keyword, Output File [optional], Case-sensitive [optional] to search e.g.\n node ./\src/\index.js path TODO output.txt i ");
+    console.log("Please input the Path, Keyword, Output File [optional], Case-sensitive [optional] to search e.g.\n node .\\src\\index.js path TODO output.txt i ");
     process.exit(1);
 }
 //Check the path

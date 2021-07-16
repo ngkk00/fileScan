@@ -1,16 +1,17 @@
 const getAllFiles = require("../../src/scanFile");
+const path = require('path');
 
 describe("getAllFiles()", () => {
     const expected = [
-        'C:\\Users\\kk_ng\\Documents\\vsproject\\fileScan\\path\\to\\your\\dir\\somdir\\somemodule\\somefile.js',
-        'C:\\Users\\kk_ng\\Documents\\vsproject\\fileScan\\path\\to\\your\\dir\\somdir\\somemodule\\someotherfile.js',
-        'C:\\Users\\kk_ng\\Documents\\vsproject\\fileScan\\path\\to\\your\\dir\\somdir2\\anotherdir\\index.js',
-        'C:\\Users\\kk_ng\\Documents\\vsproject\\fileScan\\path\\to\\your\\dir\\somdir2\\anotherdir\\yet_another_dir\\index.js',
-        'C:\\Users\\kk_ng\\Documents\\vsproject\\fileScan\\path\\to\\your\\dir\\somdir2\\index.js',
-        'C:\\Users\\kk_ng\\Documents\\vsproject\\fileScan\\path\\to\\your\\dir\\somdir3\\another_file.js'
+        path.join(__dirname, '/../../', 'path', 'to', 'your', 'dir', 'somdir', 'somemodule', 'somefile.js'),
+        path.join(__dirname, '/../../', 'path', 'to', 'your', 'dir', 'somdir', 'somemodule', 'someotherfile.js'),
+        path.join(__dirname, '/../../', 'path', 'to', 'your', 'dir', 'somdir2', 'anotherdir', 'index.js'),
+        path.join(__dirname, '/../../', 'path', 'to', 'your', 'dir', 'somdir2', 'anotherdir', 'yet_another_dir', 'index.js'),
+        path.join(__dirname, '/../../', 'path', 'to', 'your', 'dir', 'somdir2', 'index.js'),
+        path.join(__dirname, '/../../', 'path', 'to', 'your', 'dir', 'somdir3', 'another_file.js')
     ];
     it('should return array contains directory path', async () => {
-        expect(await getAllFiles.searchFiles(__dirname + "/../../path", "TODO")).toStrictEqual(expect.arrayContaining(expected));
+        expect(await getAllFiles.searchFiles(__dirname + "/../../path", "TODO")).toEqual(expect.arrayContaining(expected));
     });
 
     it('Missing input parameter', () => {
