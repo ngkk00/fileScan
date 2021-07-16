@@ -14,7 +14,8 @@ Parameter
 ```bash 
 cd fileScan
 #Case Sensitive with default file [output.txt]
-node .\src\index.js path TODO
+node .\src\index.js path TODO   (WINDOW)
+node ./src/index.js path TODO   (LINUX)
 ```
 <p align="center">
     <img src ='./resources/gif/normalSearch.gif'
@@ -23,12 +24,14 @@ node .\src\index.js path TODO
 
 ```bash 
 #Case Sensitive with output file name
-node .\src\index.js path TODO ./searchfile.txt  
+node .\src\index.js path TODO searchResult    (WINDOW)
+node ./src/index.js path TODO searchResult    (LINUX)
 ```
 
 ```bash 
 #Case insensitive
-node .\src\index.js path todo ./output.txt i  
+node .\src\index.js path todo searchResult i      (WINDOW)
+node ./src/index.js path todo searchResult i      (LINUX)
 ```
 <p align="center">
     <img src ='./resources/gif/insensitiveSearch.gif'
