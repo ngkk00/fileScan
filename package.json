@@ -9,7 +9,9 @@
   },
   "author": "kk",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "jsdoc": "^3.6.7"
+  },
   "devDependencies": {
     "eslint": "^7.30.0",
     "jest": "^27.0.6"
