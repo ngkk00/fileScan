@@ -40,7 +40,8 @@ node ./src/index.js path todo searchResult i      (LINUX)
 
 ```bash 
 #Change output file name
-node .\src\index.js path TODO searchResult  
+node .\src\index.js path TODO searchResult  (WINDOW)
+node ./src/index.js path TODO searchResult  (LINUX)
 ```
 <p align="center">
     <img src ='./resources/gif/changeOutputFile.gif'
