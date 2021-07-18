@@ -60,3 +60,6 @@ To run unit test
 ```bash
 npm run unit
 ```
+
+The JSDoc for scanFile module can be found in
+[https://ngkk00.github.io/fileScan/global.html#searchFiles]
